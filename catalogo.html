@@ -100,260 +100,284 @@ document.getElementById("cerrarContactoBtn").addEventListener("click", function(
             <button onclick="showCategory('sin-gorro')">Sudaderas sin Gorro</button>
         </div>
 
-        <!-- Sudaderas Deportivas -->
-        <div class="categoria-section" id="deportivas">
-            <h3>Sudaderas Deportivas</h3>
-            <div class="categorias-lista">
-                <!-- Producto 1 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva1.png" alt="Sudadera Deportiva 1">
-                    <h3>Sudadera Deportiva 1</h3>
-                    <p>$500.00</p>
-                    <button onclick="toggleDetails('detalles-1')">Ver detalles</button>
-                    <div id="detalles-1" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera ideal para deportes. Comodidad y flexibilidad.</p>
-                        <p><strong>Material:</strong> Poliéster y Spandex</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 2 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva2.png" alt="Sudadera Deportiva 2">
-                    <h3>Sudadera Deportiva 2</h3>
-                    <p>$5400.00</p>
-                    <button onclick="toggleDetails('detalles-2')">Ver detalles</button>
-                    <div id="detalles-2" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera ligera y transpirable, perfecta para actividades al aire libre.</p>
-                        <p><strong>Material:</strong> Algodón y Poliéster</p>
-                        <p><strong>Tallas disponibles:</strong> M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 3 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva3.png" alt="Sudadera Deportiva 3">
-                    <h3>Sudadera Deportiva 3</h3>
-                    <p>$480.00</p>
-                    <button onclick="toggleDetails('detalles-3')">Ver detalles</button>
-                    <div id="detalles-3" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera diseñada para entrenamientos intensos. Resistente y cómoda.</p>
-                        <p><strong>Material:</strong> Spandex y Algodón</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 4 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva4.png" alt="Sudadera Deportiva 4">
-                    <h3>Sudadera Deportiva 4</h3>
-                    <p>$250.00</p>
-                    <button onclick="toggleDetails('detalles-4')">Ver detalles</button>
-                    <div id="detalles-4" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera con tecnología de secado rápido, ideal para actividades deportivas.</p>
-                        <p><strong>Material:</strong> Poliéster</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 5 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva5.png" alt="Sudadera Deportiva 5">
-                    <h3>Sudadera Deportiva 5</h3>
-                    <p>$200.00</p>
-                    <button onclick="toggleDetails('detalles-5')">Ver detalles</button>
-                    <div id="detalles-5" class="detalles">
-                        <p><strong>Descripción:</strong> Ideal para corredores. Suave y con un ajuste perfecto.</p>
-                        <p><strong>Material:</strong> Algodón y Lycra</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 6 -->
-                <div class="categoria">
-                    <img src="sudaderadeportiva6.png" alt="Sudadera Deportiva 6">
-                    <h3>Sudadera Deportiva 6</h3>
-                    <p>$200.00</p>
-                    <button onclick="toggleDetails('detalles-6')">Ver detalles</button>
-                    <div id="detalles-6" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera de alta resistencia para entrenamientos intensivos.</p>
-                        <p><strong>Material:</strong> Poliéster con tecnología antitranspirante</p>
-                        <p><strong>Tallas disponibles:</strong> M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
+<!-- Sudaderas Deportivas -->
+<div class="categoria-section" id="deportivas">
+    <h3>Sudaderas Deportivas</h3>
+    <div class="categorias-lista">
+
+        <!-- Producto 1 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva1.png" alt="Sudadera Deportiva 1">
+            <h3>Sudadera Deportiva 1</h3>
+            <p>$500.00</p>
+            <button onclick="toggleDetails('detalles-1')">Ver detalles</button>
+            <div id="detalles-1" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Sudadera ideal para deportes. Comodidad y flexibilidad.</p>
+                <p><strong>Material:</strong> Poliéster y Spandex</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
             </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 1', 500)">Añadir al carrito</button>
         </div>
 
-        <!-- Sudaderas con Gorro -->
-        <div class="categoria-section" id="con-gorro" style="display: none;">
-            <h3>Sudaderas con Gorro</h3>
-            <div class="categorias-lista">
-                                <!-- Producto 1 -->
-                <div class="categoria">
-                    <img src="sudaderagorro.png" alt="Sudadera Deportiva 1">
-                    <h3>Sudadera Verde lima</h3>
-                    <p>$400.00</p>
-                    <button onclick="toggleDetails('detalles-7')">Ver detalles</button>
-                    <div id="detalles-7" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera color verde lima ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> 100% Algodon</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 2 -->
-                <div class="categoria">
-                    <img src="sudaderagorro2.png" alt="Sudadera Deportiva 2">
-                    <h3>Sudadera Vino</h3>
-                    <p>$400.00</p>
-                    <button onclick="toggleDetails('detalles-8')">Ver detalles</button>
-                    <div id="detalles-8" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera  color vino ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> 100% Algodón </p>
-                        <p><strong>Tallas disponibles:</strong> M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 3 -->
-                <div class="categoria">
-                    <img src="sudaderagorro3.png" alt="Sudadera Deportiva 3">
-                    <h3>Sudadera Blanca</h3>
-                    <p>$48.00</p>
-                    <button onclick="toggleDetails('detalles-9')">Ver detalles</button>
-                    <div id="detalles-9" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera Blanca ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> 100% Algodón</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 4 -->
-                <div class="categoria">
-                    <img src="sudaderagorro4.png" alt="Sudadera Deportiva 4">
-                    <h3>Sudadera Negra</h3>
-                    <p>$400.00</p>
-                    <button onclick="toggleDetails('detalles-10')">Ver detalles</button>
-                    <div id="detalles-10" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera Negra ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> Poliéster</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 5 -->
-                <div class="categoria">
-                    <img src="sudaderagorro5.png" alt="Sudadera Deportiva 5">
-                    <h3>Sudadera Gris</h3>
-                    <p>$400.00</p>
-                    <button onclick="toggleDetails('detalles-11')">Ver detalles</button>
-                    <div id="detalles-11" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera gris ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> Algodón y Lycra</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 6 -->
-                <div class="categoria">
-                    <img src="sudaderagorro6.png" alt="Sudadera Deportiva 6">
-                    <h3>Sudadera Naranja</h3>
-                    <p>$500.00</p>
-                    <button onclick="toggleDetails('detalles-12')">Ver detalles</button>
-                    <div id="detalles-12" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera Naranja ideal para el frio y con gorro suabe y muy comoda.</p>
-                        <p><strong>Material:</strong> 100% algodon</p>
-                        <p><strong>Tallas disponibles:</strong> M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
+        <!-- Producto 2 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva2.png" alt="Sudadera Deportiva 2">
+            <h3>Sudadera Deportiva 2</h3>
+            <p>$5400.00</p>
+            <button onclick="toggleDetails('detalles-2')">Ver detalles</button>
+            <div id="detalles-2" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Sudadera ligera y transpirable, perfecta para actividades al aire libre.</p>
+                <p><strong>Material:</strong> Algodón y Poliéster</p>
+                <p><strong>Tallas disponibles:</strong> M, L, XL</p>
             </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 2', 5400)">Añadir al carrito</button>
         </div>
+
+        <!-- Producto 3 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva3.png" alt="Sudadera Deportiva 3">
+            <h3>Sudadera Deportiva 3</h3>
+            <p>$480.00</p>
+            <button onclick="toggleDetails('detalles-3')">Ver detalles</button>
+            <div id="detalles-3" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Sudadera diseñada para entrenamientos intensos. Resistente y cómoda.</p>
+                <p><strong>Material:</strong> Spandex y Algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 3', 480)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva4.png" alt="Sudadera Deportiva 4">
+            <h3>Sudadera Deportiva 4</h3>
+            <p>$250.00</p>
+            <button onclick="toggleDetails('detalles-4')">Ver detalles</button>
+            <div id="detalles-4" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Sudadera con tecnología de secado rápido, ideal para actividades deportivas.</p>
+                <p><strong>Material:</strong> Poliéster</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 4', 250)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva5.png" alt="Sudadera Deportiva 5">
+            <h3>Sudadera Deportiva 5</h3>
+            <p>$200.00</p>
+            <button onclick="toggleDetails('detalles-5')">Ver detalles</button>
+            <div id="detalles-5" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Ideal para corredores. Suave y con un ajuste perfecto.</p>
+                <p><strong>Material:</strong> Algodón y Lycra</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 5', 200)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="categoria">
+            <img src="sudaderadeportiva6.png" alt="Sudadera Deportiva 6">
+            <h3>Sudadera Deportiva 6</h3>
+            <p>$200.00</p>
+            <button onclick="toggleDetails('detalles-6')">Ver detalles</button>
+            <div id="detalles-6" class="detalles" style="display:none;">
+                <p><strong>Descripción:</strong> Sudadera de alta resistencia para entrenamientos intensivos.</p>
+                <p><strong>Material:</strong> Poliéster con tecnología antitranspirante</p>
+                <p><strong>Tallas disponibles:</strong> M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Deportiva 6', 200)">Añadir al carrito</button>
+        </div>
+
+    </div>
+</div>
+
+
+       <!-- Sudaderas con Gorro -->
+<div class="categoria-section" id="con-gorro" style="display: none;">
+    <h3>Sudaderas con Gorro</h3>
+    <div class="categorias-lista">
+
+        <!-- Producto 1 -->
+        <div class="categoria">
+            <img src="sudaderagorro.png" alt="Sudadera Verde lima">
+            <h3>Sudadera Verde lima</h3>
+            <p>$400.00</p>
+            <button onclick="toggleDetails('detalles-7')">Ver detalles</button>
+            <div id="detalles-7" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera color verde lima ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> 100% Algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Verde lima', 400)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="categoria">
+            <img src="sudaderagorro2.png" alt="Sudadera Vino">
+            <h3>Sudadera Vino</h3>
+            <p>$400.00</p>
+            <button onclick="toggleDetails('detalles-8')">Ver detalles</button>
+            <div id="detalles-8" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera color vino ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> 100% Algodón</p>
+                <p><strong>Tallas disponibles:</strong> M, L, XL</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Vino', 400)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="categoria">
+            <img src="sudaderagorro3.png" alt="Sudadera Blanca">
+            <h3>Sudadera Blanca</h3>
+            <p>$48.00</p>
+            <button onclick="toggleDetails('detalles-9')">Ver detalles</button>
+            <div id="detalles-9" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera blanca ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> 100% Algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Blanca', 48)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="categoria">
+            <img src="sudaderagorro4.png" alt="Sudadera Negra">
+            <h3>Sudadera Negra</h3>
+            <p>$400.00</p>
+            <button onclick="toggleDetails('detalles-10')">Ver detalles</button>
+            <div id="detalles-10" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera negra ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> Poliéster</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Negra', 400)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="categoria">
+            <img src="sudaderagorro5.png" alt="Sudadera Gris">
+            <h3>Sudadera Gris</h3>
+            <p>$400.00</p>
+            <button onclick="toggleDetails('detalles-11')">Ver detalles</button>
+            <div id="detalles-11" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera gris ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> Algodón y Lycra</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Gris', 400)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="categoria">
+            <img src="sudaderagorro6.png" alt="Sudadera Naranja">
+            <h3>Sudadera Naranja</h3>
+            <p>$500.00</p>
+            <button onclick="toggleDetails('detalles-12')">Ver detalles</button>
+            <div id="detalles-12" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera naranja ideal para el frío, con gorro suave y muy cómoda.</p>
+                <p><strong>Material:</strong> 100% Algodón</p>
+                <p><strong>Tallas disponibles:</strong> M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Naranja', 500)">Añadir al carrito</button>
+        </div>
+
+    </div>
+</div>
+
 
         <!-- Sudaderas sin Gorro -->
-        <div class="categoria-section" id="sin-gorro" style="display: none;">
-            <h3>Sudaderas sin Gorro</h3>
-            <div class="categorias-lista">
-                                <!-- Producto 1 -->
-                <div class="categoria">
-                    <img src="sudadera1.png" alt="Sudadera sin gorro1">
-                    <h3>Sudadera Roja</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-13')">Ver detalles</button>
-                    <div id="detalles-13" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera roja sin gorro muy comoda y ideal para una ocacion formal. </p>
-                        <p><strong>Material:</strong> Puro algodon</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 2 -->
-                <div class="categoria">
-                    <img src="sudadera2.png" alt="Sudadera sin gorro2">
-                    <h3>Sudadera Azul</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-14')">Ver detalles</button>
-                    <div id="detalles-14" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera azul sin gorro muy comoda y ideal para una ocacion formal.</p>
-                        <p><strong>Material:</strong> Puro algodón.</p>
-                        <p><strong>Tallas disponibles:</strong> M, L, XL</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 3 -->
-                <div class="categoria">
-                    <img src="sudadera3.png" alt="Sudadera sin gorro3">
-                    <h3>Sudadera Negra</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-15')">Ver detalles</button>
-                    <div id="detalles-15" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera negra sin gorro muy comoda y ideal para una ocacion formal.</p>
-                        <p><strong>Material:</strong> Puro algodón</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 4 -->
-                <div class="categoria">
-                    <img src="sudadera4.png" alt="Sudadera Deportiva 4">
-                    <h3>Sudadera verde</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-16')">Ver detalles</button>
-                    <div id="detalles-16" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera verde sin gorro muy comoda y ideal para una ocacion formal.</p>
-                        <p><strong>Material:</strong> Puro algodon</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 5 -->
-                <div class="categoria">
-                    <img src="sudadera5.png" alt="Sudadera Deportiva 5">
-                    <h3>Sudadera Cafe</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-17')">Ver detalles</button>
-                    <div id="detalles-17" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera cafe sin gorro muy comoda y ideal para una ocacion formal.</p>
-                        <p><strong>Material:</strong> Puro algodón.</p>
-                        <p><strong>Tallas disponibles:</strong> S, M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
-                <!-- Producto 6 -->
-                <div class="categoria">
-                    <img src="sudadera6.png" alt="Sudadera Deportiva 6">
-                    <h3>Sudadera Blanca</h3>
-                    <p>$300.00</p>
-                    <button onclick="toggleDetails('detalles-18')">Ver detalles</button>
-                    <div id="detalles-18" class="detalles">
-                        <p><strong>Descripción:</strong> Sudadera blnca sin gorro muy comoda y ideal para una ocacion formal.</p>
-                        <p><strong>Material:</strong> Puro algodon.</p>
-                        <p><strong>Tallas disponibles:</strong> M, L</p>
-                    </div>
-                    <button class="comprar-btn">Comprar</button>
-                </div>
+<div class="categoria-section" id="sin-gorro" style="display: none;">
+    <h3>Sudaderas sin Gorro</h3>
+    <div class="categorias-lista">
+
+        <!-- Producto 1 -->
+        <div class="categoria">
+            <img src="sudadera1.png" alt="Sudadera Roja">
+            <h3>Sudadera Roja</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-13')">Ver detalles</button>
+            <div id="detalles-13" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera roja sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L, XL</p>
             </div>
+            <button onclick="agregarAlCarrito('Sudadera Roja', 300)">Añadir al carrito</button>
         </div>
+
+        <!-- Producto 2 -->
+        <div class="categoria">
+            <img src="sudadera2.png" alt="Sudadera Azul">
+            <h3>Sudadera Azul</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-14')">Ver detalles</button>
+            <div id="detalles-14" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera azul sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> M, L, XL</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Azul', 300)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="categoria">
+            <img src="sudadera3.png" alt="Sudadera Negra">
+            <h3>Sudadera Negra</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-15')">Ver detalles</button>
+            <div id="detalles-15" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera negra sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Negra', 300)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="categoria">
+            <img src="sudadera4.png" alt="Sudadera Verde">
+            <h3>Sudadera Verde</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-16')">Ver detalles</button>
+            <div id="detalles-16" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera verde sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Verde', 300)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="categoria">
+            <img src="sudadera5.png" alt="Sudadera Café">
+            <h3>Sudadera Café</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-17')">Ver detalles</button>
+            <div id="detalles-17" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera café sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> S, M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Café', 300)">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="categoria">
+            <img src="sudadera6.png" alt="Sudadera Blanca">
+            <h3>Sudadera Blanca</h3>
+            <p>$300.00</p>
+            <button onclick="toggleDetails('detalles-18')">Ver detalles</button>
+            <div id="detalles-18" class="detalles" style="display: none;">
+                <p><strong>Descripción:</strong> Sudadera blanca sin gorro, muy cómoda e ideal para una ocasión formal.</p>
+                <p><strong>Material:</strong> Puro algodón</p>
+                <p><strong>Tallas disponibles:</strong> M, L</p>
+            </div>
+            <button onclick="agregarAlCarrito('Sudadera Blanca', 300)">Añadir al carrito</button>
+        </div>
+
+    </div>
+</div>
+
         <div class="contacto-modal" id="contactoModal">
     <h2>Contáctanos</h2>
     <p><i class="fas fa-envelope"></i> <a href="mailto:naranjogabriel974@gmail.com">naranjogabriel974@gmail.com</a></p>
@@ -362,6 +386,22 @@ document.getElementById("cerrarContactoBtn").addEventListener("click", function(
     <button id="cerrarContactoBtn">Cerrar</button>
 </div>
     </section>
+    <center>
+<a href="carrito.html" style="
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+">
+  🛒 Ir al carrito
+</a>
+ </center>
 
     <footer>
         <p>&copy; 2025 HOODIES. Todos los derechos reservados para cruz.</p>
@@ -399,8 +439,25 @@ document.getElementById("cerrarContactoBtn").addEventListener("click", function(
             });
         });
     </script>
+<script>
+    function agregarAlCarrito(nombre, precio) {
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      const index = carrito.findIndex(item => item.nombre === nombre);
+      if (index !== -1) {
+        carrito[index].cantidad += 1;
+      } else {
+        carrito.push({ nombre, precio, cantidad: 1 });
+      }
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      alert(`${nombre} se agregó al carrito`);
+    }
+  </script>
+<!-- Producto 5 -->
+
 </body>
 
 </body>
+<script src="carrito.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
 </html>
+
 
