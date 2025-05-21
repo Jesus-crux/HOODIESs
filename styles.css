@@ -264,17 +264,6 @@ button:focus {
 }
 /* styles.css */
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #fdfaf6;
-  color: #333;
-}
-
-h1 {
-  color: #e67e22;
-}
-
 ul#lista-carrito {
   list-style-type: none;
   padding: 0;
